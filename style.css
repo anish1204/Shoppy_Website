@@ -1,11 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@200&family=Roboto:ital,wght@0,100;0,900;1,900&family=Salsa&family=Shantell+Sans&display=swap'); */
+
+:root{
+  
+}
 body{
+  
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
 }
 p{
-  color: gray;
+  font-size: larger;
+  color: rgb(61, 61, 61);
 }
 .LeftPlane{
   margin-right: 10%;
@@ -42,14 +47,23 @@ p{
 }
 
 .image-container{
+  border-radius: 15px;
   margin-left: 2rem;
 }
+#buttonContainer button{
+  border-color: transparent;
 
+
+}
+#buttonContainer button:hover{
+  opacity: 0.5;
+}
 .image-container img{
   align-items: center;
   justify-content: center;
   margin-top: 5%;
   border-radius: 5%;
+  margin-right: 2%;
   width: 115px;
   height: 115px;
 }
@@ -106,7 +120,8 @@ justify-content: center;
   
 }
 .ValueOpt{
-  background-color: rgba(194, 181, 181, 0.664);
+  font-size: larger;
+  background-color: rgba(148, 172, 243, 0.244);
     align-items: center;
     width:169px;
     text-align: center;
@@ -136,6 +151,7 @@ justify-content: center;
   border-color: transparent;
 }
 .Onsubmittext{
+  justify-content: center;
   width: 50%;
   text-align: center;
   background-color: lemonchiffon;
@@ -147,6 +163,7 @@ image-container {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  justify-content: space-evenly;
 }
 
 .thumbnail {
@@ -159,6 +176,7 @@ image-container {
   height: 580px;
   border: 2px solid #ddd;
   overflow: hidden;
+  border-radius: 15px;
   
 }
 
@@ -171,14 +189,23 @@ image-container {
 @media screen and (max-width: 767px) {
   .preview-image{
     width: 100%;
+    
+  }
+  .Onsubmittext{
+    text-align: center;
+    justify-content: center;
   }
   body {
+    text-align: center;
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
   }
+
   .LeftPlane{
-    width: 100%;
+
+    width: max-content;
+    display: inline-block;
     margin-left: 0;
     position: relative;
     justify-content: center;
@@ -194,6 +221,10 @@ image-container {
   .RightPlane{
     width: fit-content;
    
+  }
+  .ProductPrice{
+    justify-content: center;
+    text-align: center !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -247,4 +278,14 @@ image-container {
   .preview-image{
     margin-right: 5%;
   }
+  
 }
+
+
+
+
+
+
+/*   Temp   */
+
+

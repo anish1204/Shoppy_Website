@@ -10,30 +10,26 @@
         
       </style>
     <title>Coding Assesment L2 boilerplate</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@200&family=Roboto:ital,wght@0,100;0,900;1,900&family=Salsa&family=Shantell+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="LeftPlane">
         <div class="preview-box">
-            <img id="previewImage" class="preview-image" src="./images/main.jpg" alt="Preview">
+            <img id="previewImage" class="preview-image" src="https://media.istockphoto.com/id/1270652087/photo/beautiful-woman-with-voluminous-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=JvF9OXG3Iq-eJnP1mg7zYWBjO_Kq6nTGbJK_eTsCjgA=" alt="Preview">
           </div>
         <!-- <img src="./images/main.jpg" alt="" style="width:587px ; height:691px ;"> -->
         
         <div class="image-container">
-            <img class="thumbnail" src="./images/alt1.png" alt="Image 1" onclick="previewImage('./images/alt1.png')">
-            <img class="thumbnail" src="./images/alt2.png" alt="Image 2" onclick="previewImage('./images/alt2.png')">
-            <img class="thumbnail" src="./images/alt3.png" alt="Image 3" onclick="previewImage('./images/alt3.png')">
-            <img class="thumbnail" src="./images/alt4.png" alt="Image 4" onclick="previewImage('./images/alt4.png')">
+            <img class="thumbnail" src="https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1" onclick="previewImage('https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&w=600')">
+            <img class="thumbnail" src="https://img.freepik.com/free-photo/young-woman-sunglasses-hat-black-leather-jacket-posing-outdoor_231208-13405.jpg?size=626&ext=jpg&ga=GA1.1.1364777002.1705904027&semt=sph" alt="Image 2" onclick="previewImage('https://img.freepik.com/free-photo/young-woman-sunglasses-hat-black-leather-jacket-posing-outdoor_231208-13405.jpg?size=626&ext=jpg&ga=GA1.1.1364777002.1705904027&semt=sph')">
+            <img class="thumbnail" src="https://img.freepik.com/free-photo/she-likes-fashion-so-much_329181-4680.jpg?w=360&t=st=1706902399~exp=1706902999~hmac=9ad968e240c6620ae46ccafdb41c967ae9982444b7b3489d434212ff59842cfe" alt="Image 3" onclick="previewImage('https://img.freepik.com/free-photo/she-likes-fashion-so-much_329181-4680.jpg?w=360&t=st=1706902399~exp=1706902999~hmac=9ad968e240c6620ae46ccafdb41c967ae9982444b7b3489d434212ff59842cfe')">
+            <img class="thumbnail" src="https://media.istockphoto.com/id/1270652087/photo/beautiful-woman-with-voluminous-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=JvF9OXG3Iq-eJnP1mg7zYWBjO_Kq6nTGbJK_eTsCjgA=" alt="Image 4" onclick="previewImage('https://media.istockphoto.com/id/1270652087/photo/beautiful-woman-with-voluminous-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=JvF9OXG3Iq-eJnP1mg7zYWBjO_Kq6nTGbJK_eTsCjgA=')">
         </div>
 
-<!-- 
-        <div class="AlterNativeImages">
-            <img src="./images/alt1.png" alt="">
-            <img src="./images/alt1.png" alt="">
-            <img src="./images/alt1.png" alt="">
-            <img src="./images/alt1.png" alt="">
-        </div> -->
+
     </div>
     <div class="RightPlane">
         <p style="color: gray;" id="Pdttitle"></p>
@@ -43,22 +39,22 @@
         <div class="ProductPrice">
             <div class="AltPrice">
                 <h1 id="DisPrice"></h1>
-                <div id="OrgPrice" class="OrgPrice" style="color: gray;">
-                    $15999.00
-                </div>
+                <s id="OrgPrice" class="OrgPrice" style="color: gray;">
+                   
+                </s>
             </div>
             <div class="SecondPrice">
-                <h3>35% Off</h3>
+                <h3 id="DiscountedAmount">35% Off</h3>
             </div>
             
         </div>
+            
         
-        <div class="ColorSec">
             <p>Choose a color</p>
             <div id="buttonContainer">
                
             </div>
-        </div>
+            
         <br>
         <p>Choose a size</p>
         <div class="SizeSec" id="radioContainer">
@@ -78,11 +74,10 @@
         <div class="Onsubmittext" id="Onsubmittext">
 
         </div>
-        <h3 id="description"></h3>
+        <p id="description"></p>
     </div>
 
-
-
+  
 
     <script src="./script.js"></script>
 </body>
