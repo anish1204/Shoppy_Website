@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <style>
+        
+      </style>
+    <title>Coding Assesment L2 boilerplate</title>
+
+</head>
+
+<body>
+    <div class="LeftPlane">
+        <div class="preview-box">
+            <img id="previewImage" class="preview-image" src="./images/main.jpg" alt="Preview">
+          </div>
+        <!-- <img src="./images/main.jpg" alt="" style="width:587px ; height:691px ;"> -->
+        
+        <div class="image-container">
+            <img class="thumbnail" src="./images/alt1.png" alt="Image 1" onclick="previewImage('./images/alt1.png')">
+            <img class="thumbnail" src="./images/alt2.png" alt="Image 2" onclick="previewImage('./images/alt2.png')">
+            <img class="thumbnail" src="./images/alt3.png" alt="Image 3" onclick="previewImage('./images/alt3.png')">
+            <img class="thumbnail" src="./images/alt4.png" alt="Image 4" onclick="previewImage('./images/alt4.png')">
+        </div>
+
+<!-- 
+        <div class="AlterNativeImages">
+            <img src="./images/alt1.png" alt="">
+            <img src="./images/alt1.png" alt="">
+            <img src="./images/alt1.png" alt="">
+            <img src="./images/alt1.png" alt="">
+        </div> -->
+    </div>
+    <div class="RightPlane">
+        <p style="color: gray;" id="Pdttitle"></p>
+        <div class="ProductTitle">
+            <h2 id="ProductTitle">Embrace SlideBoard</h2>
+        </div>
+        <div class="ProductPrice">
+            <div class="AltPrice">
+                <h1 id="DisPrice"></h1>
+                <div id="OrgPrice" class="OrgPrice" style="color: gray;">
+                    $15999.00
+                </div>
+            </div>
+            <div class="SecondPrice">
+                <h3>35% Off</h3>
+            </div>
+            
+        </div>
+        
+        <div class="ColorSec">
+            <p>Choose a color</p>
+            <div id="buttonContainer">
+               
+            </div>
+        </div>
+        <br>
+        <p>Choose a size</p>
+        <div class="SizeSec" id="radioContainer">
+          
+        </div>
+        <br><br>
+        <div class="AddtoCart">
+            <div class="ValueOpt">
+                    <button id="decrementButton">-</button>
+                    <span id="count">1</span>
+                    <button id="incrementButton">+</button>
+            </div>
+            <!-- <img src="./bag.png" width="20%"  alt=""> -->
+            <button type="submit" onclick="showRadioValue()" class="Addbtn">  Add to Cart</button>
+        </div>
+        <br><br><br>
+        <div class="Onsubmittext" id="Onsubmittext">
+
+        </div>
+        <h3 id="description"></h3>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

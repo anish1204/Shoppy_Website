@@ -1,0 +1,250 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@200&family=Roboto:ital,wght@0,100;0,900;1,900&family=Salsa&family=Shantell+Sans&display=swap'); */
+body{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+p{
+  color: gray;
+}
+.LeftPlane{
+  margin-right: 10%;
+  margin-left: 5%;
+  width: 46%;
+}
+.preview-box img{
+ 
+}
+.RightPlane{
+  width: 54%;
+}
+.ProductPrice{
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+}
+.AltPrice h1{
+  
+  color: rgb(36, 4, 143);
+}
+.AltPrice{
+  display: flex;
+  flex-direction: column;
+}
+.SecondPrice{
+  color: rgb(241, 143, 175);
+  margin-left: 3%;
+  margin-top: 0.5rem;
+}
+.OrgPrice
+{
+  margin-top: -19px;
+}
+
+.image-container{
+  margin-left: 2rem;
+}
+
+.image-container img{
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 5%;
+  width: 115px;
+  height: 115px;
+}
+
+.AlterNativeImages{
+  margin-left: 2rem;
+}
+
+.AlterNativeImages img{
+  align-items: center;
+justify-content: center;
+  margin-top: 5%;
+  border-radius: 5%;
+  width: 115px;
+  height: 115px;
+}
+.buttonContainer{
+  display: flex;
+}
+.ColorOption{
+  display: flex;
+  flex-direction: row;
+  
+}
+.buttonContainer button{
+  border-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+}
+.colorOpt{
+  border-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+}
+.radioContainer {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+ 
+}
+.SizeSec label{
+  color: rgb(86, 84, 84);
+  background-color: rgba(188, 178, 230, 0.37);
+  margin-left: 3%;
+  border-radius: 7%;
+  height: 40px !important;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+.AddtoCart{
+  display: flex;flex-direction: row;
+  
+}
+.ValueOpt{
+  background-color: rgba(194, 181, 181, 0.664);
+    align-items: center;
+    width:169px;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-content: space-evenly !important;
+    border-radius: 50px;
+}
+.ValueOpt button{
+  font-size: larger;
+  justify-content: space-evenly !important;
+}
+.Addbtn{
+  background-color: rgba(37, 28, 100, 0.836);
+  width: 309px;
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-left: 2rem;
+}
+.Addbtn img{
+  margin-right: 15%;
+}
+#decrementButton,#incrementButton{
+  font-size: larger;
+  background-color: transparent;
+  border-color: transparent;
+}
+.Onsubmittext{
+  width: 50%;
+  text-align: center;
+  background-color: lemonchiffon;
+  border-radius: 15px;
+}
+
+
+image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 100px;
+  cursor: pointer;
+}
+
+.preview-box {
+  /* width: 600px; */
+  height: 580px;
+  border: 2px solid #ddd;
+  overflow: hidden;
+  
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .preview-image{
+    width: 100%;
+  }
+  body {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  .LeftPlane{
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-right: 15%;
+  }
+  .RightPlane{
+    width: fit-content;
+   
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  body {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  .AddtoCart{
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  .Addbtn {
+    margin-top: 2rem;
+    background-color: rgba(37, 28, 100, 0.836);
+    width: 309px;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-left: 2rem;
+    height: 3rem;
+  }
+  .LeftPlane{
+    width: 40%;
+  }
+  .RightPlane{
+    width: 100%;
+  }
+  .preview-box{
+   width: max-content;
+   border-color: transparent;
+  }
+  .previewImage{
+    border-color: transparent;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1360px)
+{
+  body{
+    justify-content: space-between;
+  }
+  .LeftPlane{
+    margin-right: 5%;
+  }
+  .preview-image{
+    margin-right: 5%;
+  }
+}
