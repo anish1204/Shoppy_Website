@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    
     <style>
         
       </style>
-    <title>Coding Assesment L2 boilerplate</title>
+    <title>Shoopy_WebSite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@200&family=Roboto:ital,wght@0,100;0,900;1,900&family=Salsa&family=Shantell+Sans&display=swap" rel="stylesheet">
@@ -17,10 +17,13 @@
 
 <body>
     <div class="LeftPlane">
+
+        <!-- Preview Box Where all the JSON data images will be fetched -->
+
         <div class="preview-box">
             <img id="previewImage" class="preview-image" src="https://media.istockphoto.com/id/1270652087/photo/beautiful-woman-with-voluminous-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=JvF9OXG3Iq-eJnP1mg7zYWBjO_Kq6nTGbJK_eTsCjgA=" alt="Preview">
           </div>
-        <!-- <img src="./images/main.jpg" alt="" style="width:587px ; height:691px ;"> -->
+        
         
         <div class="image-container">
             <img class="thumbnail" src="https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1" onclick="previewImage('https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&w=600')">
@@ -34,51 +37,58 @@
     <div class="RightPlane">
         <p style="color: gray;" id="Pdttitle"></p>
         <div class="ProductTitle">
-            <h2 id="ProductTitle">Embrace SlideBoard</h2>
+            <h2 id="ProductTitle">
+                <!-- Product Title To be Fetched Here  -->
+            </h2>
         </div>
         <div class="ProductPrice">
             <div class="AltPrice">
-                <h1 id="DisPrice"></h1>
+                <h1 id="DisPrice">
+                    <!-- Price After Discount  -->
+                </h1>
                 <s id="OrgPrice" class="OrgPrice" style="color: gray;">
-                   
+                    <!-- Original Price here  -->
                 </s>
             </div>
             <div class="SecondPrice">
-                <h3 id="DiscountedAmount">35% Off</h3>
+                <h3 id="DiscountedAmount">
+                    <!-- The Percentage is calculated in the Js File (refer there) and fetched here  -->
+                </h3>
             </div>
-            
         </div>
-            
-        
             <p>Choose a color</p>
             <div id="buttonContainer">
-               
+               <!-- All the Color Category will be fetched from the JSON and will be displayed here  -->
             </div>
             
         <br>
         <p>Choose a size</p>
         <div class="SizeSec" id="radioContainer">
-          
+            <!-- All the Size Category will be fetched from the JSON and will be displayed here  -->
         </div>
         <br><br>
         <div class="AddtoCart">
             <div class="ValueOpt">
+                    <!-- Count and increment and decrement button  -->
                     <button id="decrementButton">-</button>
                     <span id="count">1</span>
                     <button id="incrementButton">+</button>
             </div>
-            <!-- <img src="./bag.png" width="20%"  alt=""> -->
+            <!-- Add to Cart Button  -->
             <button type="submit" onclick="showRadioValue()" class="Addbtn">  Add to Cart</button>
         </div>
         <br><br><br>
         <div class="Onsubmittext" id="Onsubmittext">
-
+            <!-- After Submission text will be generated here  -->
         </div>
-        <p id="description"></p>
+
+        <p id="description">
+            <!-- description imported from json file  -->
+        </p>
     </div>
 
   
-
+<!-- importing the javascript file  -->
     <script src="./script.js"></script>
 </body>
 
